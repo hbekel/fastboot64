@@ -1,0 +1,7 @@
+fastboot64
+fastboot64.exe
+tools/make-code.exe
+patch.h
+*.bin
+*.rom
+*.stackdump
