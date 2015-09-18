@@ -29,7 +29,7 @@ PREFIX defaults to `/usr/local`. Use DESTDIR for staged installs.
 
 <pre>
                       fastboot64 version 1.0
-      Copyright (c) 2015, Henning Bekel <h.bekel@googlemail.com>
+      Copyright (c) 2015, Henning Bekel &lt;h.bekel@googlemail.com&gt;
 	   
 		      All rights reserved.
 
