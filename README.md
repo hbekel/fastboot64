@@ -23,7 +23,7 @@ Windows (using mingw32):
 
    $ make CC=i686-pc-mingw32-gcc
    
-Use PREFIX and DESTDIR to control the install location.
+PREFIX defaults to `/usr/local`. Use DESTDIR for staged installs.
 
 ## LICENSE
 

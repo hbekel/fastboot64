@@ -5,13 +5,19 @@
 int main(int argc, char **argv) {
 
   char *filename = argv[1];
-  struct stat st;
   int size, i;
   FILE* f;
 
-  stat(filename, &st);
+#if __MINGW32__  
+  struct __stat64 st;  
+  __stat64(filename, &st);
+#else
+  struct stat st;
+    stat(filename, &st);
+#endif
   size = st.st_size;
-  
+
+ 
   if((f = fopen(filename, "rb")) == NULL) {
     fprintf(stderr, "%s: error opening %s\n", argv[0], filename);
     return EXIT_FAILURE;

@@ -1,9 +1,9 @@
 KASM?=java -jar /usr/share/kickassembler/KickAss.jar
 CC?=gcc
-CFLAGS=-Wall -O2 -std=c99
+CFLAGS=-Wall -O2 -std=c99 -static-libgcc
 
-PREFIX=/usr
-DESTDIR=
+PREFIX?=/usr/local
+DESTDIR?=
 
 all: fastboot64
 
