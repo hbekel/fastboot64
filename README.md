@@ -3,25 +3,25 @@
 
 ## Synopsis
 
-    fastboot64 original.rom patched.rom
+    $ fastboot64 original.rom patched.rom
 
 ## Description
 
 This is a simple tool that replaces the startup memory check of a C64
 kernal with a small routine that checks for a module inserted at $8000
-and adjust the amount of free memory accordingly.
+and adjusts the reported amount of free memory accordingly.
 
 ## Build & Install from source
 
 Linux & MacOSX:
 
-   $ cd fastboot64
-   $ make
-   $ make install
+    $ cd fastboot64
+    $ make
+    $ make install
 
 Windows (using mingw32):
 
-   $ make CC=i686-pc-mingw32-gcc
+    $ make CC=i686-pc-mingw32-gcc
    
 PREFIX defaults to `/usr/local`. Use DESTDIR for staged installs.
 
